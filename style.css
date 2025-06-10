@@ -1,0 +1,73 @@
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow-x: hidden;
+  border-radius: 12px;
+  border: 2px solid green;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  width: 600px;
+  overflow: visible;
+}
+
+
+.card {
+/* false alarm */
+}
+
+.card.open {
+  width: 300px;
+}
+
+.card .text-box {
+  display: none;
+}
+
+.card.open .text-box {
+  display: block;
+}
+
+.card img {
+  width: 100%;
+  min-width: 300px;
+  max-width: 300px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-container {
+  width: 300px;
+}
+
+.text-box {
+  background-color: gainsboro;
+  color: blue;
+  height: 100%;
+  width: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 
+on hover of another  card others
+the textbox width is 0px 
+the text inside is display: none
+on hover of the card
+the textbox width is 300px
+the text inside is display: block
+then when theres no hover, the first one is always open
+ */
+
+ body{
+  display: flex;
+  align-items: center;
+  
+ }
